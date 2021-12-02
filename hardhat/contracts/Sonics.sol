@@ -14,7 +14,7 @@ contract Sonics is ERC1155, ERC1155Receiver, Ownable {
     mapping(uint256 => address[]) public redeemers;
     mapping(uint256 => uint256) public redemptions;
 
-    uint256 price = 0.1 ether;
+    uint256 public price = 0.1 ether;
 
     constructor() ERC1155("sdfds") {
     }
